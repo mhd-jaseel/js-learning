@@ -151,9 +151,9 @@ console.log(Object.assign(a,b))
 // arr.splice(0,1,"orange")
 // console.log(arr)
 
-// const numbers = [1, [2, 4,[3,5,[7]]]];
+const numbers = [1, [2, 4,[3,5,[7]]]];
 
-// const result = numbers.flat(3);
+const result = numbers.flat(3);
 
-// console.log(result);
+console.log(result);
 
