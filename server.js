@@ -43,14 +43,14 @@
 
 
 
-// const Event =require("events")
-// const myevent=new Event()
+const Event =require("events")
+const myevent=new Event()
 
-// myevent.on("login",(user)=>{
-//     console.log(`${user} logged`)
+myevent.on("login",(user)=>{
+    console.log(`${user} logged`)
 
-// })
-// myevent.emit("login","jaseel")
+})
+myevent.emit("login","jaseel")
 
 
 const express=require("express");
