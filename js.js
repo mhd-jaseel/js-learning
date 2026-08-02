@@ -8,3 +8,5 @@ function two() {
 }
 
 two();
+
+console.log("hello")
