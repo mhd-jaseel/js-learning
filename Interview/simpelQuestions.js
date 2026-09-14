@@ -76,3 +76,17 @@ function removeDuplicate(num){
       
 }
 console.log(removeDuplicate([1,5,3,6,23,1]))
+
+//Find the missing number from an array.
+
+function missingNumber(num){
+    let missing=0
+    for(let i =0;i<num.length;i++){
+        if (num[i+1]-num[i]!==1){
+            missing=num[i]+1
+            break
+        }
+    }
+    return missing
+}
+console.log(missingNumber([1,2,3,5,6,7]))
