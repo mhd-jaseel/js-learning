@@ -8,7 +8,6 @@ function reverse(str){
 }
 reverse("jaseel")
 
-
 // Find the largest number in an array without using Math.max()
 
 function largestNumber(num){
@@ -90,3 +89,22 @@ function missingNumber(num){
     return missing
 }
 console.log(missingNumber([1,2,3,5,6,7]))
+
+// Find the missing number without assuming the array is sorted.
+
+function missingNumberWithoutSort(num){
+   let arr= num.sort((a,b)=>a-b)
+   let missing=0
+
+   for (let i=0;i<arr.length-1;i++){
+    if(arr[i+1]-arr[i]!=1){
+        missing =arr[i]+1
+        break;
+    }
+   }
+   console.log(missing)
+
+}
+missingNumberWithoutSort([1,3,2,5])
+
+//Find the missing number without using sort(), Set, or creating another array.
